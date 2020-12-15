@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="images/mi.jpg" type="image/x-icon">
+	<meta charset="UTF-8">
+	<title>假的小米商城</title>
+	<style>
+	
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	body{
+		background-color: #fff;
+		text-align:center;
+		min-width: 1226px;
+	}
+
+	
+	.top{
+	background-color: #333;
+	height:32px;
+	width:100%;
+	position: relative;
+	top:0px;
+	margin-right: auto;
+    margin-left: auto;
+	}
+	.top .topcenter{
+		width: 63%;
+		height: 32px;
+		position:absolute;
+		left:17%;
+	}
+	.top .topcenter .topleft{
+		top:3.5px;
+		left:0px;
+		position:absolute;
+	}
+	.top .topcenter .topleft li{
+		float:left;
+		padding:0px;
+	}
+	.top .topcenter .topright{
+		top:3.5px;
+		right:0px;
+		position:absolute;
+	}
+	.top .topcenter .topright li{
+		float:right;
+		padding:0px;
+	}
+	.top .topcenter .sep{
+		margin: 0 .5em;
+  		color: #424242;
+	}
+	
+	.topcenter .shopping{
+		position: relative;
+		float:right;
+		height: 28px;
+    	text-align: center;
+    	width: 88px;
+    	background:#424242;
+	}
+	
+	.shopping .shoppingimg{
+		position: absolute;
+		left:-45%;
+		top:-1px;
+	}
+	
+	.shopping .kuzwlu{
+		position: absolute;
+		left:32%;
+		top:5px;
+	}
+	.shopping img{
+		width: 15px;
+	}
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	.top .topcenter a{
+		text-decoration: none;
+		color:#f5f5f5;
+		margin: auto;
+		font-size: 10px;
+		color: #b0b0b0;
+	}
+	
+	.header{
+		position: relative;
+    	z-index: 20;
+   		height:78px;
+   		margin-right: auto;
+    	margin-left: auto;
+	}
+	
+	.header .mi img{
+		width: 42px;
+    	height: 42px;
+    	top:18px;
+    	left:17%;
+    	position:absolute;
+	}
+	
+	.header .mi a{
+		text-decoration: none;
+		color:#333;
+	}
+	
+	.header .search a{
+		color:#333;
+		font-size: 10px;
+		text-decoration: none;
+	}
+	
+	.mi .headerli{
+		position:absolute;
+		font-size: 12.5px;
+		width: 500px;
+		height: 48px;
+		padding: 12px 0 0 30px;
+		margin: 0;
+		left:25.5%;
+		top:18px;
+	}
+	
+	.header .mi .headerli li{
+		float: left;
+	}
+	
+	.header span{
+		margin: 0.5em;
+	}
+	
+	
+	.mi .search{
+		float: right;
+    	width: 296px;
+    	margin-top: 3px;
+    	border-radius:3px 3px 3px 3px;
+    	position: relative;
+    	right:16.15%;
+	}
+    
+	.header .mi .search .searchtext{
+		position: absolute;
+		right: 0%;
+		width: 175px;
+    	height: 40px;
+    	padding: 0 10px;
+    	border: 1px solid #e0e0e0;
+   	 	border-right-width: 0px;
+		font-size: 14px;
+    	line-height: 48px;
+	}
+	
+	.search .sea{
+		position: relative;
+		float: right;
+		right: 33.3%;
+		width: 250px;
+    	height: 40px;
+    	top:18px;
+	}
+	
+	.sea .search-text1{
+		top:14.5px;
+		float: right;
+		right:25%;
+		margin-left: 5px;
+    	padding: 0 5px;
+    	font-size: 12px;
+    	background: #eee;
+    	color: #757575;
+    	position: absolute;
+    	
+    }
+    
+    .sea .search-text2{
+		top:14.5px;
+		float: right;
+		right:2.5%;
+		margin-left: 5px;
+    	padding: 0 5px;
+    	font-size: 12px;
+    	background: #eee;
+    	color: #757575;
+    	position: absolute;
+    	
+    }
+	
+	.search .submit{
+		position: absolute;
+    	right: 20%;
+    	top:18px;
+    	width: 39px;
+    	height: 40px;
+    	border: 1px solid #e0e0e0;
+    	font-size: 24px;
+    	cursor: pointer;
+    	background: #fff url(images/search.png);
+	}
+	
+	.container{
+		position: relative;
+		width: 1226px;
+		height: 655px;
+   		margin-right: auto;
+    	margin-left: auto;
+	}
+	
+	.container .kefu{
+		position: absolute;
+		left:106.5%;
+		top:7%;
+	}
+	.container .kefu img{
+		width: 68px;
+	}
+	
+	.home-hero{
+		position: absolute;
+		left:9.1%;
+		right:9.1%;
+		width: 958px;
+		height: 368px;
+		-webkit-animation-name: 'loop';
+        -webkit-animation-duration: 11s;
+        -webkit-animation-iteration-count: infinite;
+	}
+	@-webkit-keyframes "loop"{
+    0% { background: url("images/mi1.jpg") no-repeat;}
+    25% { background: url("images/mi2.jpg") no-repeat;}
+    50% { background: url("images/mi3.jpg") no-repeat;}
+    75% { background: url("images/mi4.jpg") no-repeat;}
+    100% { background: url("images/mi5.jpg") no-repeat;}
+    }
+    
+    .container .left-list{
+    	height: 368px;
+    	width: 180px;
+    	border: 0;
+    	color: #fff;
+    	background: #333;
+    	background: rgba(0,0,0,0.6);
+    	position: relative;
+    	left:9.1%;
+    	text-align: left;
+    }
+    
+    .container .kong{
+    	position: absolute;
+    	top:5px;
+    	height: 368px;
+    	width: 180px;
+    }
+    
+    .container .left-list a{
+    	text-decoration: none;
+    	color:white;
+    	font-size: 11px;
+    }
+    
+    .container .left-list li{
+    	margin-left: 27px;
+    	margin-top:14px;
+    }
+    
+    .container .kong span{
+    	color: rgba(255,255,255,0.4);
+    	margin-top:4.6px;
+    	font-weight: bolder;
+    }
+    
+    .container .zc{
+    	position: absolute;
+    	left:86%;
+    }
+    
+	.home-hero-slider{
+		position: relative;
+    	height: 150px;
+    	width: 1226px;
+    	top:12px;
+    	margin-right: auto;
+    	margin-left: auto;
+    }
+    
+    .home-hero-slider .tupian{
+		position: absolute;
+		left:9.1%;
+    }
+	
+    .home-hero-slider .img1{
+		position: absolute;
+		left:24.5%;
+    }
+    
+    .home-hero-slider .img2{
+		position: absolute;
+		right:34.3%;
+    }
+    
+    .home-hero-slider .img3{
+    	position: absolute;
+    	right:12.8%;
+    }
+    .home-hero-slider .tupian img{
+    	height: 130px;
+    }
+	.home-hero-slider .img1 img{
+    	height: 130px;
+    	width: 250.4px;
+    }
+    .home-hero-slider .img2 img{
+    	height: 130px;
+    	width: 243px;
+    }
+    .home-hero-slider .img3 img{
+    	height: 130px;
+    	width: 251.5px;
+    }
+    
+	.red7a{
+    	position: relative;
+ 		top:12px;
+    }
+    
+	.red7a .img4{
+    	position: absolute;
+		left:9.1%;
+    }
+    .container .red7a img{
+    	height: 94px;
+    }
+    
+	.home{
+		padding-top: 22px;
+		background: #f5f5f5;
+	}
+	
+	
+	.phone{
+		height:686px;
+		width: 1226px;
+		position: relative;
+	}
+	
+	.phone .box-hd{
+	position: relative;
+    height: 10px;
+    left:0;
+    height: 38px;
+	}
+	
+	.phone .box-hd .title{
+		position: absolute;
+		left:9.1%;
+		top:3px;
+	}
+	
+	.phone .box-hd h2{
+		font-weight: lighter ;
+		font-size: 18px;
+	}
+	
+	.phone .more-link{
+		position: absolute;
+		right:12.6%;
+		top:6px;
+	}
+	
+	.more-link a{
+		font-size: 13.5px;
+		text-decoration: none;
+		color: #333;
+	}
+	
+	.list{
+		position: absolute;
+		float: left;
+		left:9.1%;
+	}
+	
+	.phone .lists{
+		height: 472.3px;
+		width: 824px;
+		position: relative;
+		left:24.7%;
+	}
+	
+	.container .list img{
+		width: 180px;
+		height: 482px;
+	}
+	
+	.phone .lists img{
+		width: 130px;
+	}
+	
+	.lists .xia{
+		position: relative;
+		top:13.5px;
+	}
+	
+	.mx{
+		position: absolute;
+		left:9.1%;
+		top:79%;
+		float: center;
+	}
+	
+	.mx img{
+		height: 94.2px;
+	}
+	
+	.bgc{
+		background-color: #83c44e;
+		position: absolute;
+		left:36.6%;
+		font-size: 9px;
+		z-index: 1000;
+		color:#fff;
+		width: 51px;
+		height: 15px;
+	}
+	
+	.bgcred{
+		background-color: #e53935;
+		position: absolute;
+		left:36.6%;
+		font-size: 9px;
+		z-index: 1000;
+		color:#fff;
+		width: 51px;
+		height: 15px;
+	}
+	
+	.p1{
+		font-size: 10px;
+		position: absolute;
+		z-index: 1000;
+		margin-left: 44px;
+		margin-top: 155px;
+		text-align: center;
+	}
+	
+	.p2{
+		font-size: 8px;
+		position: absolute;
+		z-index: 1000;
+		color: #b0b0b0;
+		margin-left: 16px;
+		margin-top: 175px;
+		text-align: center;
+	}
+	
+	.p3{
+		font-size: 10px;
+		position: absolute;
+		top:88%;
+		left:44.5%;
+		z-index: 1000;
+		color: red;
+	}
+	
+	.p4{
+		font-size: 10px;
+		position: absolute;
+		z-index: 1000;
+		color: red;
+		margin-left: 68px;
+		margin-top: 200px;
+		text-align: center;
+	}
+	
+	.p5{
+		text-decoration: line-through;
+		font-size: 10px;
+		position: absolute;
+		z-index: 1000;
+		color: #b0b0b0;
+		margin-left: 95px;
+		margin-top: 200px;
+	}
+	
+	
+	.lists .x1{
+		position: absolute;
+		width: 185px;
+		height: 235px;
+		left:0%;
+	}
+	
+	.list1{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 235px;
+	}
+	
+	.lists .x2{
+		position: absolute;
+		left:23.75%;
+		width: 195px;
+		height: 235px;
+	}
+	
+	.list2{
+		text-decoration: line-through;
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 235px;
+	}
+	
+	.lists .x3{
+		position: absolute;
+		left:47.45%;
+		width: 195px;
+		height: 235px;
+	}
+	
+	.list3{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 235px;
+	}
+	
+	.lists .x4{
+		position: absolute;
+		left:71.15%;
+		width: 195px;
+		height: 235px;
+	}
+	
+	.list4{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 235px;
+	}
+	
+	.lists .x5{
+		position: absolute;
+		top:52.5%;
+		left:0%;
+		width: 195px;
+		height: 225.5px;
+	}
+	
+	.list5{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 225.5px;
+	}
+	
+	.lists .x6{
+		position: absolute;
+		top:52.5%;
+		left:23.75%;
+		width: 195px;
+		height: 225.5px;
+	}
+	
+	.list6{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 225.5px;
+	}
+	
+	.lists .x7{
+		position: absolute;
+		top:52.5%;
+		left:47.45%;
+		width: 195px;
+		height: 225.5px;
+	}
+	
+	.list7{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 225.5px;
+	}
+	
+	.lists .x8{
+		position: absolute;
+		top:52.5%;
+		left:71.15%;
+		width: 195px;
+		height: 225.5px;
+		float: left;
+	}
+	
+	.list8{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 225.5px;
+	}
+
+
+
+	
+	
+	.title1{
+		position: absolute;
+		left:9.1%;
+		top:-10px;
+	}
+	
+	.more{
+		position: absolute;
+		right:11.8%;
+		top:-10px;
+	}
+	
+	.more ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	
+	.more li{
+		float: right;
+		margin: 5px;
+	}
+	
+	.more a{
+		text-decoration: none;
+		font-size: 13px;
+		color: #333;
+	}
+	
+	.phone .lists2{
+		height: 472.3px;
+		width: 824px;
+		position: absolute;
+		left:0%;
+	}
+	
+	.lists2 .xia{
+		position: relative;
+		top:13.5px;
+	}
+	
+	.phone .lists2 img{
+		width: 130px;
+	}
+	
+	.p6{
+		font-size: 10px;
+		position: absolute;
+		z-index: 1000;
+		color: #333;
+		margin-left: 25px;
+		margin-top: 34px;
+	}
+	
+	.p7{
+		font-size: 10px;
+		position: absolute;
+		z-index: 1000;
+		color: red;
+		margin-left: 25px;
+		margin-top: 60px;
+	}
+	
+	.p8{
+		font-size: 15px;
+		position: absolute;
+		z-index: 1000;
+		color: #333;
+		margin-left: 25px;
+		margin-top: 35px;
+	}
+	
+	.p9{
+		font-size: 8px;
+		position: absolute;
+		z-index: 1000;
+		color: #333;
+		margin-left: 25px;
+		margin-top: 65px;
+	}
+	
+	
+	.lists2 .x9{
+		position: absolute;
+		width: 185px;
+		height: 235px;
+		left:13.39%;
+	}
+	.lists2 .x10{
+		position: absolute;
+		left:37.04%;
+		width: 195px;
+		height: 235px;
+	}
+	.lists2 .x11{
+		position: absolute;
+		left:60.9%;
+		width: 195px;
+		height: 235px;
+	}
+	.lists2 .x12{
+		position: absolute;
+		left:84.69%;
+		width: 195px;
+		height: 235px;
+	}
+	.lists2 .x13{
+		position: absolute;
+		top:0%;
+		left:108.28%;
+		width: 195px;
+		height: 235.5px;
+	}
+	.lists2 .x14{
+		position: absolute;
+		top:52.5%;
+		left:13.3%;
+		width: 195px;
+		height: 225.5px;
+	}
+	.lists2 .x15{
+		position: absolute;
+		top:52.5%;
+		left:37.04%;
+		width: 195px;
+		height: 225.5px;
+	}
+	.lists2 .x16{
+		position: absolute;
+		top:52.5%;
+		left:60.9%;
+		width: 195px;
+		height: 225.5px;
+		float: left;
+	}
+	.lists2 .x17{
+		position: absolute;
+		top:52.5%;
+		left:84.69%;
+		width: 195px;
+		height: 225.5px;
+	}
+	
+	.lists2 .x20{
+		position: relative;
+		top:52.5%;
+		left:108.28%;
+		width: 195px;
+		height: 225.5px;
+	}
+	
+	.x20 .x18{
+		position: relative;
+		top:0%;
+		left:0%;
+		width: 195px;
+		height: 104.5px;
+	}
+	
+	.x20 .x19{
+		position: absolute;
+		top:53.5%;
+		left:0%;
+		width: 195px;
+		height: 106.5px;
+	}
+	
+	.x18 .list2{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 106.5px;
+	}
+	
+	.x19 .list3{
+		position: absolute;
+		top:0px;
+		left:0%;
+		background-color: #fff;
+		width: 185px;
+		height: 113.5px;
+	}
+	.lists2 .x9 img{
+	width: 185px;
+	height: 235px;
+	}
+	.lists2 .x14 img{
+	width: 185px;
+	height: 235px;
+	}
+	
+	.x18 .qq2{
+		position: absolute;
+		z-index: 1000;
+		float: right;
+		left:52%;
+		top:18%;
+	}
+	
+	.x19 .qq{
+		position: absolute;
+		z-index: 1000;
+		float: right;
+		left:54%;
+		top:28%;
+	}
+	.x20 .x18 img{
+		width: 70px;
+	}
+	.x20 .x19 img{
+		width: 65px;
+	}
+	
+	.more a:hover{
+		color:#ff6700;
+		text-decoration:underline;
+	}
+	
+	.home .lists a:hover{
+	box-shadow:0px 0px 1px 1px #BEBEBE;
+	}
+	.home .list a:hover{
+	box-shadow:0px 0px 1px 1px #BEBEBE;
+	}
+	.home .lists2 a:hover {
+		box-shadow:0px 0px 1px 1px #BEBEBE;
+	}
+	.home-1 .lists3 a:hover {
+		box-shadow:0px 0px 1px 1px #BEBEBE;
+	}
+	.header .mi .sea a:hover{
+		background-color: #ff6700;
+		color: #fff;
+	}
+	.top a:hover{
+		color: #fff;
+	}
+	.headerli a:hover{
+		color: #ff6700;
+	}
+	.kong a:hover{
+		background-color: #ff6700;
+	}
+	
+	.home-1{
+		padding-top: 22px;
+		background: #f5f5f5;
+		position: relative;
+		top:-125px;
+	}
+	.container1{
+		width: 1226px;
+		height: 300px;
+		margin-left:auto;
+		margin-right:auto;
+		position: relative;
+	}
+	.container1 .box-1{
+		position: relative;
+		width: 1226px;
+		height: 50px;
+		left:0%;
+
+	}
+	.box-1 .box-2{
+		position: relative;
+		float: left;
+		width: 1226px;
+		height: 50px;
+	}
+	.box-2 .title1{
+		position: absolute;
+		float: left;
+		top:0px;
+		z-index: 5;
+	}
+	.container1  h2{
+		font-weight: lighter ;
+		font-size: 18px;
+	}
+	.box-2 .bg1{
+		position: absolute;
+		float: right;
+		left:83.3%;
+		z-index: 10;
+	}
+	.box-2 img{
+		width: 60px;
+	}
+	.box-1 .lists3{
+		height: 227px;
+		position: relative;
+		left:9.1%;
+		top:35px;
+	}
+	.lists3 .x21{
+		position: absolute;
+		top:0%;
+		left:0.15%;
+		width: 180px;
+		height: 225.5px;
+	}
+	.lists3 .x22{
+		position: absolute;
+		top:0%;
+		left:16.2%;
+		width: 180px;
+		height: 225.5px;
+	}
+	.lists3 .x23{
+		position: absolute;
+		top:0%;
+		left:32.1%;
+		width: 180px;
+		height: 225.5px;
+	}
+	.lists3 .x24{
+		position: absolute;
+		top:0%;
+		left:48.2%;
+		width: 180px;
+		height: 225.5px;
+	}
+	.lists3 .x25{
+		position: absolute;
+		top:0%;
+		left:64.2%;
+		width: 180px;
+		height: 225.5px;
+	}
+
+
+	
+	.container2{
+		width: 1226px;
+		height: 400px;
+		margin-left:auto;
+		margin-right:auto;
+		position: relative;
+		top:-20px;
+	}
+	.container2  h2{
+		font-weight: lighter ;
+		font-size: 18px;
+	}
+	.container2 .box-1{
+		width: 1226px;
+		height: 400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.box-1 .lists4{
+		position: relative;
+		text-align: center;
+
+	}
+	
+	.lists4 .x26{
+		position: absolute;
+		float: left;
+		left:9.1%;
+		top:37px;
+	}
+	.lists4 .x27{
+		position: absolute;
+		float: left;
+		left:29.1%;
+		top:37px;
+	}
+	.lists4 .x28{
+		position: absolute;
+		float: left;
+		left:49.2%;
+		top:37px;
+	}
+	.lists4 .x29{
+		position: absolute;
+		float: left;
+		left:69.2%;
+		top:37px;
+	}
+	
+	.list5{
+		position: absolute;
+		width: 235px;
+		height: 330px;
+		background-color: #fff;
+	}
+	
+	.x26 .neirong1{
+		width: 235px;
+		height: 1px;
+		background-color: #ffac13;
+	}
+	.x27 .neirong2{
+		width: 235px;
+		height: 1px;
+		background-color: #83c44e;
+	}
+	.x28 .neirong3{
+		width: 235px;
+		height: 1px;
+		background-color: #e53935;
+	}
+	.x29 .neirong4{
+		width: 235px;
+		height: 1px;
+		background-color: #2196f3;
+	}
+	
+	.x26 p{
+		color: #ffac13;
+	}
+	
+	.x27 p{
+		color: #83c44e;
+	}
+	
+	.x28 p{
+		color: #e53935;
+	}
+	
+	.x29 p{
+		color: #2196f3;
+	}
+	
+	.p10{
+		font-size: 13px;
+		height: 13px;
+		width: 30px;
+		background-color: #fff;
+		position: absolute;
+		top:35px;
+		left:42%;
+	}
+	
+	.h10{
+		position: absolute;
+		top:17%;
+		left:27px;
+	}
+	
+	.sapn11{
+		font-size: 9px;
+		height: 18px;
+		width: 170px;
+		background-color: #fff;
+		position: absolute;
+		top:87px;
+		left:12.5%;
+		color: #b0b0b0;
+	}
+	
+	.p12{
+		font-size: 11px;
+		height: 13px;
+		width: 60px;
+		background-color: #fff;
+		position: absolute;
+		top:37%;
+		left:37%;
+		color: #333;
+	}
+	
+	.p13{
+		position: absolute;
+		top:45%;
+		left:14%;
+	}
+	
+	.list5  img{
+		height: 120px;
+	}
+	
+	.p14{
+		position: absolute;
+		top:88%;
+		left:33.9%;
+	}
+	
+	.p14 img{
+		height: 15px;
+	}
+	
+	.p15{
+		position: absolute;
+		top:88%;
+		left:31.9%;
+	}
+	
+	.p15 img{
+		height: 15px;
+	}
+	
+	.gg2{
+		padding-top: 22px;
+		position: relative;
+		background: #f5f5f5;
+		top:-150px;
+	}
+	.gg2 .gg6{
+		width: 1226px;
+		height: 300px;
+		margin-left:auto;
+		margin-right:auto;
+		position: relative;
+	}
+	.gg6 .gg3{
+		position: absolute;
+		left:8.9%;
+	}
+	.gg2 img{
+		width: 980px;
+	}
+	.gg4{
+		position: relative;
+		background: #fff;
+		top:-150px;
+	}
+	.gg4 .gg7{
+		width: 1226px;
+		height: 300px;
+		margin-left:auto;
+		margin-right:auto;
+		position: relative;
+	}
+	.gg7 .gg5{
+		position: absolute;
+		left:8.9%;
+	}
+	.gg4 img{
+		width: 980px;
+	}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="topcenter">
+			<ul class="topleft">
+				<li><a href="mi.html">小米商城<span class="sep">|</span></a></li>
+				<li><a href="404.html">MIUI<span class="sep">|</span></a></li>
+				<li><a href="404.html">loT<span class="sep">|</span></a></li>
+				<li><a href="404.html">云服务<span class="sep">|</span></a></li>
+				<li><a href="404.html">有品<span class="sep">|</span></a></li>
+				<li><a href="404.html">小爱开发平台<span class="sep">|</span></a></li>
+				<li><a href="404.html">企业团购<span class="sep">|</span></a></li>
+				<li><a href="404.html">资质证照<span class="sep">|</span></a></li>
+				<li><a href="404.html">协议规则<span class="sep">|</span></a></li>
+				<li><a href="404.html">下载app<span class="sep">|</span></a></li>
+				<li><a href="404.html">Select Region<span class="sep"></span></a></li>
+			</ul>
+			<ul class="topright">
+				<div class="shopping"><a class="kuzwlu" href="404.html"><img class="shoppingimg" src="images/shopping.png" alt="">购物车(0)</a></div>
+				<li><a href="404.html">消息通知<span class="sep"></span></a></li>
+				<li><a href="404.html">登录<span class="sep">|</span></a></li>
+				<li><a href="404.html">注册<span class="sep">|</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="header">
+		<div class="mi">
+			<a href="mi.html"><img src="images/logo.png" alt=""></a>
+			<div class="headerli">
+				<ul>
+					<li><a href="404.html">小米手机<span class="kongbai"></span></a></li>
+					<li><a href="404.html">Redmi 红米<span class="kongbai"></span></a></li>
+					<li><a href="404.html">电视<span class="kongbai"></span></a></li>
+					<li><a href="404.html">笔记本<span class="kongbai"></span></a></li>
+					<li><a href="404.html">家电<span class="kongbai"></span></a></li>
+					<li><a href="404.html">路由器<span class="kongbai"></span></a></li>
+					<li><a href="404.html">智能硬件<span class="kongbai"></span></a></li>
+					<li><a href="404.html">服务<span class="kongbai"></span></a></li>
+					<li><a href="404.html">社区</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<div class="sea">
+				<input type="search" class="searchtext" name="keyword" autocomplete="off" value=" ">
+				<a class="search-text1" href="404.html">小米9</a>
+				<a class="search-text2" href="404.html">小米9 SE</a>
+				</div>
+				<input type="submit" class="submit" value="">
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="kefu">
+			<a href="404.html"><img src="images/kefu.png" alt=""></a>
+		</div>
+		<div class="home-hero"></div>
+		<div class="left-list">
+			<div class="kong">
+			<ul>
+				<li><a href="404.html">手机 电话卡<span class="zc">></span></a></li>
+				<li><a href="404.html">电视 盒子<span class="zc">></span></a></li>
+				<li><a href="404.html">笔记本 平板<span class="zc">></span></a></li>
+				<li><a href="404.html"> 家电 插线板<span class="zc">></span></a></li>
+				<li><a href="404.html">出行 穿戴<span class="zc">></span></a></li>
+				<li><a href="404.html">智能 路由器<span class="zc">></span></a></li>
+				<li><a href="404.html">电源 配件<span class="zc">></span></a></li>
+				<li><a href="404.html">健康 儿童<span class="zc">></span></a></li>
+				<li><a href="404.html">耳机 音箱<span class="zc">></span></a></li>
+				<li><a href="404.html">生活 箱包<span class="zc">></span></a></li>
+			</ul>
+			</div>
+		</div>
+		<div class="home-hero-slider">
+			<div class="tupian">
+				<a href="404.html"><img src="images/tupian.png" alt=""></a>
+			</div>
+			<div class="img1">
+				<a href="404.html"><img src="images/red.jpg" alt=""></a>
+			</div>
+			<div class="img2">
+				<a href="404.html"><img src="images/red7.jpg" alt=""></a>
+			</div>
+			<div class="img3">
+				<a href="404.html"><img src="images/jqr.jpg" alt=""></a>
+			</div>
+		</div>
+		<div class="red7a">
+			<div class="img4">
+			<a href="404.html"><img src="images/red7a.jpg" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="container">
+			<div class="phone">
+				<div class="mx"><a href=""><img src="images/heng/mx.jpg" alt=""></a></div>
+				<div class="box-hd">
+					<h2 class="title">手机</h2>
+						<div class="more-link">
+							<a href="404.html">查看全部&gt&gt</a>
+							</div>
+						</div>
+					<div class="list">
+					<a class="list" href="404.html"><img src="images/list.jpg" alt=""></a>
+					</div>
+					<div class="lists">
+					<div class="x1">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/xiaomi9.jpg" alt=""></a>
+						<p class="p1">小米9 6GB+128GB</p>
+						<p class="p2">骁龙855，索尼4800万超广角微距三摄</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x2">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/xiaomi9se.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x3">
+						<div class="bgc"><p >走过</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/rednote7.jpg" alt=""></a>
+						<p class="p1">Redmi Note 7 3GB+32GB</p>
+						<p class="p2">4800万拍照千元机，18个月超长质保</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x4">
+						<div class="bgc"><p >路过</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/xiaomiplay.png" alt=""></a>
+						<p class="p1">小米Play 4GB+64GB</p>
+						<p class="p2">5.84"小水滴全面屏，后置1200万AI双</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x5">
+						<div class="bgcred"><p >不要</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/xiapmi8.jpg" alt=""></a>
+						<p class="p1">小米8青春版6GB+64GB</p>
+						<p class="p2">潮流镜面渐变色，2400万自拍旗舰</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x6">
+						<div class="bgcred"><p >错过</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/xiaomi8se.jpg" alt=""></a>
+						<p class="p1">小米8 SE 6GB+128GB</p>
+						<p class="p2">三 星 AM OL ED 全 面屏 ，骁龙 710</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x7">
+						<div class="bgcred"><p >便宜</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/xiaomi6x.jpg" alt=""></a>
+						<p class="p1">小米6X 6GB+128GB</p>
+						<p class="p2">史 上 最 轻 薄 美 观 的 拍 照 手 机</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x8">
+						<div class="bgcred"><p >实惠</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/redmi6a.jpg" alt=""></a>
+						<p class="p1">红米6A 2GB+16GB</p>
+						<p class="p2">12nm高性能处理器，1300万高清相机</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="container">
+			<div class="phone">
+				<div class="mx"><a href=""><img src="images/heng/618.jpg" alt=""></a></div>
+				<div class="box-hd">
+					<h2 class="title1">家电</h2>
+
+						<div class="more">
+							<ul>
+								<li><a href="">家居</a></li>
+								<li><a href="">电脑</a></li>
+								<li><a href="">电视影音</a></li>
+								<li><a href="">热门</a></li>
+							</ul>
+							</div>
+						</div>
+					<div class="lists2">
+					<div class="x9">
+						<a class="list1" class="list1" href="404.html"><img src="images/shopping/jd1.jpg" alt=""></a>
+					</div>
+					<div class="x10">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/jd2.jpg" alt=""></a>
+						<p class="p1">米家互联网洗烘一体机</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x11">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/jd3.jpg" alt=""></a>
+						<p class="p1">米家互联网空调（一级）</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x12">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/jd4.jpg" alt=""></a>
+						<p class="p1">15.6笔记本 i5 4G MX110</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x13">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/jd5.jpg" alt=""></a>
+						<p class="p1">13.3笔记本Air 四核i7</p>
+						<p class="p2"></p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x14">
+						<a class="list1" href="404.html"><img src="images/shopping/jd6.jpg" alt=""></a>
+					</div>
+					<div class="x15">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/jd7.jpg" alt=""></a>
+						<p class="p1">米家空气净化器Pro</p>
+						<p class="p2">OLED 显示屏幕 / 激光颗粒物传感器</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x16">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/jd8.jpg" alt=""></a>
+						<p class="p1">小 米 米 家 电 水 壶</p>
+						<p class="p2"> </p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x17">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/jd9.jpg" alt=""></a>
+						<p class="p1">小 米 米 家 LED 吸顶灯</p>
+						<p class="p2"></p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x20">
+					<div class="x18">
+						<div class="qq2"><img src="images/shopping/4.jpg" alt=""></div>
+						<a class="list2" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p6">新小米移动电源</p>
+						<p class="p7">79元</p>
+					</div>
+					<div class="x19">
+						<div class="qq"><img src="images/2.png" alt=""></div>
+						<a class="list3" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p8">浏览更多</p>
+						<p class="p9">热门</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="container">
+			<div class="phone">
+				<div class="mx"><a href=""><img src="images/heng/zn.jpg" alt=""></a></div>
+				<div class="box-hd">
+					<h2 class="title1">智能</h2>
+
+						<div class="more">
+							<ul>
+								<li><a href="">路由器</a></li>
+								<li><a href="">酷玩</a></li>
+								<li><a href="">健康</a></li>
+								<li><a href="">出行</a></li>
+								<li><a href="">热门</a></li>
+							</ul>
+							</div> 
+						</div>
+					<div class="lists2">
+					<div class="x9">
+						<a class="list1" href="404.html"><img src="images/shopping/zn1.jpg" alt=""></a>
+
+					</div>
+					<div class="x10">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zj2.jpg" alt=""></a>
+						<p class="p1">飞利浦智睿台灯二代</p>
+						<p class="p2">感 知 环 境 光，主 动  优 化场 景 照明</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x11">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zn3.jpg" alt=""></a>
+						<p class="p1">Redmi Note 7 3GB+32GB</p>
+						<p class="p2">4800万拍照千元机，18个月超长质保</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x12">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zn4.jpg" alt=""></a>
+						<p class="p1">小米Play 4GB+64GB</p>
+						<p class="p2">5.84"小水滴全面屏，后置1200万AI双</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x13">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zn5.jpg" alt=""></a>
+						<p class="p1">小米8青春版6GB+64GB</p>
+						<p class="p2">潮流镜面渐变色，2400万自拍旗舰</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x14">
+						<a class="list1"  href="404.html"><img src="images/shopping/zj6.jpg" alt=""></a>
+
+					</div>
+					<div class="x15">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zj7.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x16">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zj8.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x17">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zj9.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x20">
+					<div class="x18">
+						<div class="qq2"><img src="images/shopping/4.jpg" alt=""></div>
+						<a class="list2" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p6">新小米移动电源</p>
+						<p class="p7">79元</p>
+					</div>
+					<div class="x19">
+						<div class="qq"><img src="images/2.png" alt=""></div>
+						<a class="list3" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p8">浏览更多</p>
+						<p class="p9">热门</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="container">
+			<div class="phone">
+				<div class="mx"><a href=""><img src="images/heng/dp.jpg" alt=""></a></div>
+				<div class="box-hd">
+					<h2 class="title1">搭配</h2>
+
+						<div class="more">
+							<ul>
+								<li><a href="">电池充电器</a></li>
+								<li><a href="">电源</a></li>
+								<li><a href="">耳机音响</a></li>
+								<li><a href="">热门</a></li>
+							</ul>
+							</div>
+						</div>
+					<div class="lists2">
+					<div class="x9">
+						<a  class="list1" href="404.html"><img src="images/shopping/zp1.jpg" alt=""></a>
+					</div>
+					<div class="x10">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zp2.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x11">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zp3.jpg" alt=""></a>
+						<p class="p1">Redmi Note 7 3GB+32GB</p>
+						<p class="p2">4800万拍照千元机，18个月超长质保</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x12">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zp4.jpg" alt=""></a>
+						<p class="p1">小米Play 4GB+64GB</p>
+						<p class="p2">5.84"小水滴全面屏，后置1200万AI双</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x13">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zp5.jpg" alt=""></a>
+						<p class="p1">小米8青春版6GB+64GB</p>
+						<p class="p2">潮流镜面渐变色，2400万自拍旗舰</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x14">
+						<a class="list1"  href="404.html"><img  src="images/shopping/zp6.jpg" alt=""></a>
+					</div>
+					<div class="x15">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zp7.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x16">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zp8.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x17">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/3.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x20">
+					<div class="x18">
+						<div class="qq2"><img src="images/shopping/4.jpg" alt=""></div>
+						<a class="list2" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p6">新小米移动电源</p>
+						<p class="p7">79元</p>
+					</div>
+					<div class="x19">
+						<div class="qq"><img src="images/2.png" alt=""></div>
+						<a class="list3" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p8">浏览更多</p>
+						<p class="p9">热门</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="container">
+			<div class="phone">
+				<div class="mx"><a href=""><img src="images/heng/pj.jpg" alt=""></a></div>
+				<div class="box-hd">
+					<h2 class="title1">配件</h2>
+
+						<div class="more">
+							<ul>
+								<li><a href="">其他配件</a></li>
+								<li><a href="">贴膜</a></li>
+								<li><a href="">保护套</a></li>
+								<li><a href="">热门</a></li>
+							</ul>
+							</div>
+						</div>
+					<div class="lists2">
+					<div class="x9">
+						<a class="list1"  href="404.html"><img src="images/shopping/pj1.jpg" alt=""></a>
+					</div>
+					<div class="x10">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/pj2.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x11">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/pj3.jpg" alt=""></a>
+						<p class="p1">Redmi Note 7 3GB+32GB</p>
+						<p class="p2">4800万拍照千元机，18个月超长质保</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x12">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/pj4.jpg" alt=""></a>
+						<p class="p1">小米Play 4GB+64GB</p>
+						<p class="p2">5.84"小水滴全面屏，后置1200万AI双</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x13">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/pj5.jpg" alt=""></a>
+						<p class="p1">小米8青春版6GB+64GB</p>
+						<p class="p2">潮流镜面渐变色，2400万自拍旗舰</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x14">
+						<a class="list1"  href="404.html"><img src="images/shopping/pj6.jpg" alt=""></a>
+					</div>
+					<div class="x15">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/pj7.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x16">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/pj8.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x17">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/pj9.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x20">
+					<div class="x18">
+						<div class="qq2"><img src="images/shopping/4.jpg" alt=""></div>
+						<a class="list2" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p6">新小米移动电源</p>
+						<p class="p7">79元</p>
+					</div>
+					<div class="x19">
+						<div class="qq"><img src="images/2.png" alt=""></div>
+						<a class="list3" href="404.html"><img  class="xia" src="" alt=""></a>
+						<p class="p8">浏览更多</p>
+						<p class="p9">热门</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="container">
+			<div class="phone">
+				<div class="box-hd">
+					<h2 class="title1">周边</h2>
+
+						<div class="more">
+							<ul>
+								<li><a href="">箱包</a></li>
+								<li><a href="">生活周边</a></li>
+								<li><a href="">居家</a></li>
+								<li><a href="">出行</a></li>
+								<li><a href="">热门</a></li>
+							</ul>
+							</div>
+						</div>
+					<div class="lists2">
+					<div class="x9">
+						<a class="list1" href="404.html"><img src="images/shopping/zb1.png" alt=""></a>
+					</div>
+					<div class="x10">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zb2.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x11">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zb3.jpg" alt=""></a>
+						<p class="p1">Redmi Note 7 3GB+32GB</p>
+						<p class="p2">4800万拍照千元机，18个月超长质保</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x12">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zb4.jpg" alt=""></a>
+						<p class="p1">小米Play 4GB+64GB</p>
+						<p class="p2">5.84"小水滴全面屏，后置1200万AI双</p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x13">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/zb5.jpg" alt=""></a>
+						<p class="p1">小米8青春版6GB+64GB</p>
+						<p class="p2">潮流镜面渐变色，2400万自拍旗舰</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x14">
+						<a class="list1" href="404.html"><img src="images/shopping/zb6.jpg" alt=""></a>
+					</div>
+					<div class="x15">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zb7.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x16">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zb8.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x17">
+						<div class="bgcred"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img  class="xia" src="images/shopping/zb9.jpg" alt=""></a>
+						<p class="p1">小米9 SE 6GB+128GB</p>
+						<p class="p2">索尼4800万超广角三摄，骁龙712</p>
+						<p class="p4">1元</p>
+						<p class="p5">9999元</p>
+					</div>
+					<div class="x20">
+						
+					<div class="x18">
+						<a class="list2" href="404.html"><img  class="xia" src="" alt=""></a>
+						<div class="qq2"><img src="images/shopping/4.jpg" alt=""></div>
+						<p class="p6">新小米移动电源</p>
+						<p class="p7">79元</p>
+					</div>
+					<div class="x19">
+						<a class="list3" href="404.html"><img  class="xia" src="" alt=""></a>
+						<div class="qq"><img src="images/2.png" alt=""></div>
+						<p class="p8">浏览更多</p>
+						<p class="p9">热门</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home-1">
+		<div class="container1">
+			<div class="box-1">
+				<div  class="box-2">
+					<h2 class="title1">为你推荐</h2>
+					<div class="bg1">
+						<a href="404.html"><img src="images/bg1.png" alt=""></a>
+					</div>
+				</div>
+				<div class="lists3">
+					<div class="x21">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/wn1.jpg" alt=""></a>
+						<p class="p1">米家互联网空调（一级）</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x22">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/wn2.jpg" alt=""></a>
+						<p class="p1">米家互联网空调 c1</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x23">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/wn3.jpg" alt=""></a>
+						<p class="p1">小米小爱音箱（遥控）</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x24">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/wn4.jpg" alt=""></a>
+						<p class="p1">RedmiBook 14 i5 8G</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+					<div class="x25">
+						<div class="bgc"><p >一元购</p></div>
+						<a class="list1" href="404.html"><img class="xia" src="images/shopping/wn5.jpg" alt=""></a>
+						<p class="p1">小米米家空调（三级）</p>
+						<p class="p2"></p>
+						<p class="p3">1元</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home-1">
+		<div class="container2">
+			<div class="box-1">
+				<div  class="box-2">
+					<h2 class="title1">内容</h2>
+				</div>
+				<div class="lists4">
+					<div class="x26">
+						<div class="list5">
+							<div class="neirong1"></div>
+							<p class="p10">图书</p>
+							<h class="h10">哈利·波特与被诅咒的孩子</h>
+							<span class="sapn11">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！</span>
+							<p class="p12">29.37元</p>
+							<a href="404.html"><img class="p13" src="images/shopping/p1.png" alt=""></a>
+							<div class="p14">
+							<img  src="images/p5.png" alt=""></div>
+						</div>
+					</div>
+					<div class="x27">
+						<div class="list5">
+							<div class="neirong2"></div>
+							<p class="p10">主题</p>
+							<h class="h10">BROWN & FRIENDS主题</h>
+							<span class="sapn11">BROWN & FRIENDS 小米定制主题，是LINE FRIENDS在与小米公司…</span>
+							<a href="404.html"><img class="p13" src="images/shopping/p2.png" alt=""></a>
+							<div class="p15">
+							<img src="images/p6.png" alt=""></div>
+						</div>
+					</div>
+					<div class="x28">
+						<div class="list5">
+							<div class="neirong3"></div>
+							<p class="p10">游戏</p>
+							<h class="h10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;非人学院</h>
+							<span class="sapn11">脑洞大开的二次元竞技手游</span>
+							<a href="404.html"><img class="p13" src="images/shopping/p3.png" alt=""></a>
+							<div class="p15">
+								<img src="images/p6.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="x29">
+						<div class="list5">
+							<div class="neirong4"></div>
+							<p class="p10">应用</p>
+							<h class="h10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018金米奖</h>
+							<span class="sapn11">最优秀的应用和游戏</span>
+							<a href="404.html"><img class="p13" src="images/shopping/p4.png" alt=""></a>
+							<div class="p15">
+								<img src="images/p6.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="gg2">
+		<div class="gg6">
+		<a class="gg3" href="404.html"><img src="images/gg3.jpg" alt=""></a>
+		</div>
+	</div>
+	<div class="gg4">
+		<div class="gg7">
+		<a class="gg5" href="404.html"><img src="images/gg2.png" alt=""></a>
+		</div>
+	</div>
+</body>
+</html>
